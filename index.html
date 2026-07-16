@@ -1,27 +1,406 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>My AI and Machine Learning Blog</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI & Machine Learning Learning Journal</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+
+            font-family: Arial, sans-serif;
+
+            color: white;
+
+            min-height: 100vh;
+
+            background:
+
+                radial-gradient(
+                    circle at 20% 20%,
+                    rgba(37, 99, 235, 0.35),
+                    transparent 30%
+                ),
+
+                radial-gradient(
+                    circle at 80% 70%,
+                    rgba(139, 92, 246, 0.3),
+                    transparent 30%
+                ),
+
+                linear-gradient(
+                    135deg,
+                    #0f172a,
+                    #1e1b4b,
+                    #111827
+                );
+
+        }
+
+        /* Navigation */
+
+        nav {
+
+            display: flex;
+
+            justify-content: space-between;
+
+            align-items: center;
+
+            padding: 20px 8%;
+
+            background: rgba(15, 23, 42, 0.8);
+
+            backdrop-filter: blur(10px);
+
+        }
+
+        nav h2 {
+
+            color: #93c5fd;
+
+        }
+
+        nav a {
+
+            color: white;
+
+            text-decoration: none;
+
+            margin-left: 25px;
+
+            font-size: 16px;
+
+        }
+
+        nav a:hover {
+
+            color: #93c5fd;
+
+        }
+
+        /* Hero Section */
+
+        .hero {
+
+            text-align: center;
+
+            padding: 100px 20px;
+
+        }
+
+        .hero h1 {
+
+            font-size: 52px;
+
+            margin-bottom: 25px;
+
+            background:
+
+                linear-gradient(
+                    90deg,
+                    #60a5fa,
+                    #c084fc
+                );
+
+            -webkit-background-clip: text;
+
+            -webkit-text-fill-color: transparent;
+
+        }
+
+        .hero p {
+
+            font-size: 20px;
+
+            color: #cbd5e1;
+
+            max-width: 750px;
+
+            margin: auto;
+
+            line-height: 1.7;
+
+        }
+
+        /* Main Content */
+
+        main {
+
+            max-width: 1100px;
+
+            margin: auto;
+
+            padding: 40px 20px;
+
+        }
+
+        main h2 {
+
+            text-align: center;
+
+            margin-bottom: 35px;
+
+            font-size: 32px;
+
+        }
+
+        /* Article Cards */
+
+        .articles {
+
+            display: grid;
+
+            grid-template-columns:
+
+                repeat(
+                    auto-fit,
+                    minmax(280px, 1fr)
+                );
+
+            gap: 25px;
+
+        }
+
+        .article {
+
+            background: rgba(255, 255, 255, 0.08);
+
+            border: 1px solid rgba(255, 255, 255, 0.15);
+
+            border-radius: 15px;
+
+            padding: 30px;
+
+            backdrop-filter: blur(10px);
+
+            transition: 0.3s;
+
+        }
+
+        .article:hover {
+
+            transform: translateY(-8px);
+
+            background: rgba(255, 255, 255, 0.14);
+
+        }
+
+        .article h3 {
+
+            color: #93c5fd;
+
+            margin-bottom: 15px;
+
+        }
+
+        .article p {
+
+            color: #cbd5e1;
+
+            line-height: 1.6;
+
+            margin-bottom: 20px;
+
+        }
+
+        .article a {
+
+            color: #c084fc;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+        }
+
+        /* Footer */
+
+        footer {
+
+            text-align: center;
+
+            padding: 40px;
+
+            margin-top: 60px;
+
+            color: #94a3b8;
+
+        }
+
+    </style>
+
 </head>
+
+
 <body>
 
-    <h1>My AI and Machine Learning Blog</h1>
 
-    <p>
-        Welcome to my blog. I write about Machine Learning,
-        Deep Learning, Computer Vision, Reinforcement Learning,
-        and Edge AI.
-    </p>
+    <!-- Navigation -->
 
-    <h2>My Articles</h2>
+    <nav>
 
-    <ul>
-        <li>
-            <a href="linear-regression.html">
-                Linear Regression Explained
-            </a>
-        </li>
-    </ul>
+        <h2>AI Learning Journal</h2>
+
+        <div>
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="projects.html">Projects</a>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Hero Section -->
+
+    <section class="hero">
+
+        <h1>
+
+            Exploring Artificial Intelligence
+
+        </h1>
+
+
+        <p>
+
+            A personal learning journal about
+
+            Machine Learning, Deep Learning,
+
+            Computer Vision, Reinforcement Learning,
+
+            and the mathematical foundations of AI.
+
+        </p>
+
+    </section>
+
+
+    <!-- Articles -->
+
+    <main>
+
+        <h2>Latest Learning Notes</h2>
+
+
+        <div class="articles">
+
+
+            <div class="article">
+
+                <h3>
+
+                    Linear Regression
+
+                </h3>
+
+
+                <p>
+
+                    Understanding the cost function,
+
+                    gradient descent, and the normal equation.
+
+                </p>
+
+
+                <a href="linear-regression.html">
+
+                    Read Article →
+
+                </a>
+
+            </div>
+
+
+            <div class="article">
+
+                <h3>
+
+                    Logistic Regression
+
+                </h3>
+
+
+                <p>
+
+                    Understanding the sigmoid function,
+
+                    probabilities, and binary cross-entropy.
+
+                </p>
+
+
+                <a href="logistic-regression.html">
+
+                    Read Article →
+
+                </a>
+
+            </div>
+
+
+            <div class="article">
+
+                <h3>
+
+                    Backpropagation
+
+                </h3>
+
+
+                <p>
+
+                    Learning how neural networks calculate
+
+                    gradients using the chain rule.
+
+                </p>
+
+
+                <a href="backpropagation.html">
+
+                    Read Article →
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </main>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <p>
+
+            © 2026 AI Learning Journal
+
+        </p>
+
+    </footer>
+
 
 </body>
+
 </html>
