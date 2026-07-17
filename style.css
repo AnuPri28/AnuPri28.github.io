@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>AI Learning Journal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <nav class="navbar">
+
+        <a href="index.html" class="logo">
+
+            ✦ AI Learning Journal
+
+        </a>
+
+
+        <ul class="nav-links">
+
+            <li>
+                <a href="index.html">Home</a>
+            </li>
+
+            <li>
+                <a href="machine-learning.html">
+                    Machine Learning
+                </a>
+            </li>
+
+            <li>
+                <a href="artificial-intelligence.html">
+                    AI
+                </a>
+            </li>
+
+            <li>
+                <a href="hri.html">
+                    HRI
+                </a>
+            </li>
+
+            <li>
+                <a href="projects.html">
+                    Projects
+                </a>
+            </li>
+
+        </ul>
+
+    </nav>
+
+
+    <section class="hero">
+
+        <h1>
+            From Theory to Intelligence
+        </h1>
+
+
+        <p>
+
+            A personal learning journal exploring
+
+            Machine Learning, Artificial Intelligence,
+
+            and Human–Robot Interaction.
+
+        </p>
+
+
+        <a href="#explore" class="btn">
+
+            Explore Knowledge
+
+        </a>
+
+    </section>
+
+
+    <section class="section" id="explore">
+
+        <h2 class="section-title">
+
+            Explore the Knowledge
+
+        </h2>
+
+
+        <div class="card-grid">
+
+
+            <div class="card">
+
+                <div>
+
+                    <div class="card-icon">
+                        🧠
+                    </div>
+
+
+                    <h3>
+                        Machine Learning
+                    </h3>
+
+
+                    <p>
+
+                        Mathematical foundations,
+
+                        algorithms, optimization,
+
+                        and learning theory.
+
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="machine-learning.html"
+                    class="card-link">
+
+                    Explore Machine Learning →
+
+                </a>
+
+            </div>
+
+
+            <div class="card">
+
+                <div>
+
+                    <div class="card-icon">
+                        ✨
+                    </div>
+
+
+                    <h3>
+                        Artificial Intelligence
+                    </h3>
+
+
+                    <p>
+
+                        Intelligent systems,
+
+                        reasoning, generative AI,
+
+                        and the future of intelligence.
+
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="artificial-intelligence.html"
+                    class="card-link">
+
+                    Explore AI →
+
+                </a>
+
+            </div>
+
+
+            <div class="card">
+
+                <div>
+
+                    <div class="card-icon">
+                        🤖
+                    </div>
+
+
+                    <h3>
+                        Human–Robot Interaction
+                    </h3>
+
+
+                    <p>
+
+                        Exploring perception,
+
+                        sensing, interaction,
+
+                        and collaborative robotics.
+
+                    </p>
+
+                </div>
+
+
+                <a
+                    href="hri.html"
+                    class="card-link">
+
+                    Explore HRI →
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <footer class="footer">
+
+        <p>
+
+            © 2026 AI Learning Journal
+
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
