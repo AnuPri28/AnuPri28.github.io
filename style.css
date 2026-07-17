@@ -1,236 +1,358 @@
-<!DOCTYPE html>
+/* =========================
+   RESET
+========================= */
 
-<html lang="en">
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-<head>
 
-    <meta charset="UTF-8">
+/* =========================
+   BODY
+========================= */
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+body {
+    font-family: Arial, Helvetica, sans-serif;
 
-    <title>AI Learning Journal</title>
+    color: #f8fafc;
 
-    <link rel="stylesheet" href="style.css">
+    min-height: 100vh;
 
-</head>
+    background:
+        radial-gradient(
+            circle at 10% 20%,
+            rgba(59, 130, 246, 0.25),
+            transparent 35%
+        ),
 
+        radial-gradient(
+            circle at 90% 80%,
+            rgba(139, 92, 246, 0.25),
+            transparent 35%
+        ),
 
-<body>
+        linear-gradient(
+            135deg,
+            #020617,
+            #111827,
+            #1e1b4b
+        );
+}
 
 
-    <nav class="navbar">
+/* =========================
+   NAVIGATION
+========================= */
 
-        <a href="index.html" class="logo">
+.navbar {
+    display: flex;
 
-            ✦ AI Learning Journal
+    justify-content: space-between;
 
-        </a>
+    align-items: center;
 
+    padding: 20px 4%;
 
-        <ul class="nav-links">
+    background: rgba(2, 6, 23, 0.9);
 
-            <li>
-                <a href="index.html">Home</a>
-            </li>
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
 
-            <li>
-                <a href="machine-learning.html">
-                    Machine Learning
-                </a>
-            </li>
 
-            <li>
-                <a href="artificial-intelligence.html">
-                    AI
-                </a>
-            </li>
+.logo {
+    color: #93c5fd;
 
-            <li>
-                <a href="hri.html">
-                    HRI
-                </a>
-            </li>
+    text-decoration: none;
 
-            <li>
-                <a href="projects.html">
-                    Projects
-                </a>
-            </li>
+    font-size: 1.4rem;
 
-        </ul>
+    font-weight: bold;
+}
 
-    </nav>
 
+.nav-links {
+    display: flex;
 
-    <section class="hero">
+    gap: 28px;
 
-        <h1>
-            From Theory to Intelligence
-        </h1>
+    list-style: none;
+}
 
 
-        <p>
+.nav-links a {
+    color: #f8fafc;
 
-            A personal learning journal exploring
+    text-decoration: none;
 
-            Machine Learning, Artificial Intelligence,
+    transition: color 0.3s ease;
+}
 
-            and Human–Robot Interaction.
 
-        </p>
+.nav-links a:hover {
+    color: #93c5fd;
+}
 
 
-        <a href="#explore" class="btn">
+/* =========================
+   HERO SECTION
+========================= */
 
-            Explore Knowledge
+.hero {
+    min-height: 65vh;
 
-        </a>
+    display: flex;
 
-    </section>
+    flex-direction: column;
 
+    justify-content: center;
 
-    <section class="section" id="explore">
+    align-items: center;
 
-        <h2 class="section-title">
+    text-align: center;
 
-            Explore the Knowledge
+    padding: 80px 20px;
+}
 
-        </h2>
 
+.hero h1 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
 
-        <div class="card-grid">
+    line-height: 1.1;
 
+    margin-bottom: 25px;
 
-            <div class="card">
+    background:
+        linear-gradient(
+            90deg,
+            #60a5fa,
+            #a78bfa,
+            #c084fc
+        );
 
-                <div>
+    -webkit-background-clip: text;
 
-                    <div class="card-icon">
-                        🧠
-                    </div>
+    -webkit-text-fill-color: transparent;
+}
 
 
-                    <h3>
-                        Machine Learning
-                    </h3>
+.hero p {
+    max-width: 800px;
 
+    color: #cbd5e1;
 
-                    <p>
+    font-size: 1.15rem;
 
-                        Mathematical foundations,
+    line-height: 1.8;
+}
 
-                        algorithms, optimization,
 
-                        and learning theory.
+/* =========================
+   BUTTON
+========================= */
 
-                    </p>
+.btn {
+    display: inline-block;
 
-                </div>
+    margin-top: 35px;
 
+    padding: 14px 30px;
 
-                <a
-                    href="machine-learning.html"
-                    class="card-link">
+    color: white;
 
-                    Explore Machine Learning →
+    text-decoration: none;
 
-                </a>
+    font-weight: bold;
 
-            </div>
+    border-radius: 30px;
 
+    background:
+        linear-gradient(
+            90deg,
+            #2563eb,
+            #7c3aed
+        );
 
-            <div class="card">
+    transition: 0.3s ease;
+}
 
-                <div>
 
-                    <div class="card-icon">
-                        ✨
-                    </div>
+.btn:hover {
+    transform: translateY(-4px);
 
+    box-shadow:
+        0 10px 30px
+        rgba(124, 58, 237, 0.5);
+}
 
-                    <h3>
-                        Artificial Intelligence
-                    </h3>
 
+/* =========================
+   CONTENT SECTION
+========================= */
 
-                    <p>
+.section {
+    max-width: 1200px;
 
-                        Intelligent systems,
+    margin: auto;
 
-                        reasoning, generative AI,
+    padding: 80px 5%;
+}
 
-                        and the future of intelligence.
 
-                    </p>
+.section-title {
+    text-align: center;
 
-                </div>
+    font-size: 2.3rem;
 
+    margin-bottom: 45px;
+}
 
-                <a
-                    href="artificial-intelligence.html"
-                    class="card-link">
 
-                    Explore AI →
+/* =========================
+   CARD GRID
+========================= */
 
-                </a>
+.card-grid {
+    display: grid;
 
-            </div>
+    grid-template-columns:
+        repeat(
+            auto-fit,
+            minmax(280px, 1fr)
+        );
 
+    gap: 25px;
+}
 
-            <div class="card">
 
-                <div>
+/* =========================
+   CARDS
+========================= */
 
-                    <div class="card-icon">
-                        🤖
-                    </div>
+.card {
+    min-height: 300px;
 
+    display: flex;
 
-                    <h3>
-                        Human–Robot Interaction
-                    </h3>
+    flex-direction: column;
 
+    justify-content: space-between;
 
-                    <p>
+    padding: 32px;
 
-                        Exploring perception,
+    border-radius: 20px;
 
-                        sensing, interaction,
+    background:
+        rgba(255, 255, 255, 0.08);
 
-                        and collaborative robotics.
+    border:
+        1px solid
+        rgba(255, 255, 255, 0.15);
 
-                    </p>
+    backdrop-filter: blur(15px);
 
-                </div>
+    transition:
+        transform 0.3s ease,
+        background 0.3s ease;
+}
 
 
-                <a
-                    href="hri.html"
-                    class="card-link">
+.card:hover {
+    transform: translateY(-10px);
 
-                    Explore HRI →
+    background:
+        rgba(255, 255, 255, 0.14);
+}
 
-                </a>
 
-            </div>
+.card-icon {
+    font-size: 2.8rem;
 
+    margin-bottom: 20px;
+}
 
-        </div>
 
-    </section>
+.card h3 {
+    color: #bfdbfe;
 
+    font-size: 1.5rem;
 
-    <footer class="footer">
+    margin-bottom: 15px;
+}
 
-        <p>
 
-            © 2026 AI Learning Journal
+.card p {
+    color: #cbd5e1;
 
-        </p>
+    line-height: 1.7;
+}
 
-    </footer>
 
+.card-link {
+    margin-top: 25px;
 
-</body>
+    color: #a78bfa;
 
-</html>
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+.card-link:hover {
+    color: #c4b5fd;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    text-align: center;
+
+    padding: 40px 20px;
+
+    margin-top: 50px;
+
+    color: #94a3b8;
+
+    border-top:
+        1px solid
+        rgba(255, 255, 255, 0.1);
+}
+
+
+/* =========================
+   MOBILE DESIGN
+========================= */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+
+    .nav-links {
+        gap: 15px;
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    .hero h1 {
+        font-size: 2.8rem;
+    }
+
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+}
