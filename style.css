@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 
 <html lang="en">
-
+body {
+    background-color: red;
+}
 <head>
 
     <meta charset="UTF-8">
