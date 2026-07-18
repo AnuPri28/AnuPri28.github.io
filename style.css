@@ -304,7 +304,288 @@ body {
     color: #c4b5fd;
 }
 
+/* =========================================
+   ARTICLE LAYOUT
+========================================= */
 
+.article-layout {
+    max-width: 1300px;
+
+    margin: auto;
+
+    padding: 60px 5%;
+
+    display: grid;
+
+    grid-template-columns: 240px 1fr;
+
+    gap: 60px;
+
+    align-items: start;
+}
+
+
+/* Article navigation */
+
+.article-sidebar {
+    position: sticky;
+
+    top: 100px;
+
+    padding: 25px;
+
+    border-radius: 16px;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.article-sidebar h3 {
+    color: #bfdbfe;
+
+    margin-bottom: 20px;
+
+    font-size: 1rem;
+}
+
+
+.article-sidebar a {
+    display: block;
+
+    padding: 10px 0;
+
+    color: #94a3b8;
+
+    text-decoration: none;
+
+    font-size: 0.9rem;
+
+    transition: 0.3s ease;
+}
+
+
+.article-sidebar a:hover {
+    color: #93c5fd;
+
+    transform: translateX(5px);
+}
+
+
+/* Main article */
+
+.article-content {
+    max-width: 850px;
+}
+
+
+.article-header {
+    margin-bottom: 60px;
+
+    padding-bottom: 35px;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+
+.article-category {
+    color: #a78bfa;
+
+    font-size: 0.85rem;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+    margin-bottom: 20px;
+}
+
+
+.article-title {
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+
+    line-height: 1.1;
+
+    margin-bottom: 25px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #60a5fa,
+            #c084fc
+        );
+
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+}
+
+
+.article-subtitle {
+    color: #94a3b8;
+
+    font-size: 1.2rem;
+
+    line-height: 1.7;
+}
+
+
+/* Article sections */
+
+.article-section {
+    margin-bottom: 65px;
+}
+
+
+.article-section h2 {
+    color: #bfdbfe;
+
+    font-size: 2rem;
+
+    margin-bottom: 25px;
+
+    padding-left: 18px;
+
+    border-left: 3px solid #8b5cf6;
+}
+
+
+.article-section h3 {
+    color: #c4b5fd;
+
+    font-size: 1.3rem;
+
+    margin-top: 35px;
+
+    margin-bottom: 15px;
+}
+
+
+.article-section p {
+    color: #cbd5e1;
+
+    font-size: 1.08rem;
+
+    line-height: 1.9;
+
+    margin-bottom: 20px;
+}
+
+
+/* Highlight box */
+
+.insight-box {
+    padding: 25px 30px;
+
+    margin: 30px 0;
+
+    border-left: 4px solid #60a5fa;
+
+    border-radius: 10px;
+
+    background: rgba(59, 130, 246, 0.1);
+
+    color: #dbeafe;
+
+    line-height: 1.8;
+}
+
+
+/* Important concept box */
+
+.concept-box {
+    padding: 30px;
+
+    margin: 30px 0;
+
+    border-radius: 16px;
+
+    background: rgba(255, 255, 255, 0.06);
+
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+
+.concept-box h3 {
+    margin-top: 0;
+
+    color: #93c5fd;
+}
+
+
+/* Formula */
+
+.formula {
+    padding: 30px;
+
+    margin: 30px 0;
+
+    text-align: center;
+
+    border-radius: 15px;
+
+    background: rgba(2, 6, 23, 0.8);
+
+    border: 1px solid rgba(167, 139, 250, 0.3);
+
+    color: #c4b5fd;
+
+    font-family: "Times New Roman", serif;
+
+    font-size: 1.6rem;
+}
+
+
+/* Article lists */
+
+.article-section ul {
+
+    margin: 20px 0 20px 25px;
+
+}
+
+
+.article-section li {
+
+    color: #cbd5e1;
+
+    line-height: 2;
+
+}
+
+
+/* Mobile layout */
+
+@media (max-width: 900px) {
+
+    .article-layout {
+
+        grid-template-columns: 1fr;
+
+        gap: 30px;
+
+    }
+
+
+    .article-sidebar {
+
+        position: static;
+
+    }
+
+
+    .article-sidebar a {
+
+        display: inline-block;
+
+        margin-right: 15px;
+
+    }
+
+}
 /* =========================
    FOOTER
 ========================= */
