@@ -498,21 +498,32 @@ body {
 
 .concept-box {
     padding: 30px;
-
     margin: 30px 0;
-
     border-radius: 16px;
-
     background: rgba(255, 255, 255, 0.06);
-
     border: 1px solid rgba(255, 255, 255, 0.12);
 }
 
-
 .concept-box h3 {
     margin-top: 0;
-
+    margin-bottom: 18px;   /* Add this */
     color: #93c5fd;
+}
+
+/* Add these below */
+
+.concept-box p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.concept-box ol {
+    margin-left: 25px;
+    margin-top: 10px;
+}
+
+.concept-box li {
+    margin-bottom: 8px;
 }
 
 
