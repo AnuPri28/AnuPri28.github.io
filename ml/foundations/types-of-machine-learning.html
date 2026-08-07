@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,21 +7,7 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Types of Machine Learning? | AI Learning Journal</title>
-
-    <!--
-        This file is located at:
-
-        ml/foundations/what-is-machine-learning.html
-
-        style.css is located at:
-
-        style.css
-
-        Therefore, we go up two folders:
-
-        ../../style.css
-    -->
+    <title>Types of Machine Learning | AI Learning Journal</title>
 
     <link rel="stylesheet" href="../../style.css">
 
@@ -31,19 +16,16 @@
 
 <body>
 
-  <!-- =====================================
+    <!-- =====================================
          NAVIGATION BAR
     ====================================== -->
 
     <nav class="navbar">
 
-
         <!-- Website Logo -->
 
         <a href="../../index.html" class="logo">
-
             ✦ AI Learning Journal
-
         </a>
 
 
@@ -51,70 +33,44 @@
 
         <ul class="nav-links">
 
-
             <li>
-
                 <a href="../../index.html">
-
                     Home
-
                 </a>
-
             </li>
 
-
             <li>
-
                 <a href="../../machine-learning.html">
-
                     Machine Learning
-
                 </a>
-
             </li>
 
-
             <li>
-
                 <a href="../../artificial-intelligence.html">
-
                     AI
-
                 </a>
-
             </li>
 
-
             <li>
-
                 <a href="../../hri.html">
-
                     HRI
-
                 </a>
-
             </li>
-
 
             <li>
-
                 <a href="../../projects.html">
-
                     Projects
-
                 </a>
-
             </li>
-
 
         </ul>
 
-
     </nav>
- <!-- =====================================
+
+
+    <!-- =====================================
          MAIN ARTICLE LAYOUT
     ====================================== -->
-
 
     <main class="article-layout">
 
@@ -123,166 +79,281 @@
              LEFT SIDEBAR
         ================================== -->
 
-
         <aside class="article-sidebar">
 
-
             <h3>
-
                 IN THIS ARTICLE
-
             </h3>
 
-
             <a href="#introduction">
-
                 Introduction
-
             </a>
 
-
-            <a href="#Supervise-Learning">
-
+            <a href="#supervised-learning">
                 Supervised Learning
-
             </a>
 
-
-            <a href="#unsupervise-Learning">
-
+            <a href="#unsupervised-learning">
                 Unsupervised Learning
-
             </a>
 
-
-            <a href="#Self-supervised Learning">
-
-                Self-supervised Learning
-
+            <a href="#self-supervised-learning">
+                Self-Supervised Learning
             </a>
 
-
-            <a href="#Semi-supervised Learning">
-
-                Semi-supervised Learning
-
+            <a href="#semi-supervised-learning">
+                Semi-Supervised Learning
             </a>
 
-
-            <a href="#Reinforcement Learning">
-
+            <a href="#reinforcement-learning">
                 Reinforcement Learning
-
             </a>
-    
+
         </aside>
-   <!-- =================================
+
+
+        <!-- =================================
+             ARTICLE CONTENT
+        ================================== -->
+
+        <article>
+
+
+            <!-- =================================
                  1. INTRODUCTION
             ================================== -->
-
 
             <section
                 class="article-section"
                 id="introduction">
 
+                <h2>
+                    1. Introduction
+                </h2>
+
+                <p>
+                    Types of machine learning describe different approaches
+                    that are used to train machine learning algorithms.
+                    These algorithms learn from data in different ways and
+                    can generalize their knowledge to unseen data.
+                </p>
+
+                <p>
+                    Therefore, machine learning systems can learn patterns
+                    from data without requiring explicit instructions for
+                    every situation.
+                </p>
+
+                <p>
+                    The main types of machine learning are:
+                </p>
+
+                <ul>
+                    <li>Supervised Learning</li>
+                    <li>Unsupervised Learning</li>
+                    <li>Self-Supervised Learning</li>
+                    <li>Semi-Supervised Learning</li>
+                    <li>Reinforcement Learning</li>
+                </ul>
+
+            </section>
+
+
+            <!-- =================================
+                 2. SUPERVISED LEARNING
+            ================================== -->
+
+            <section
+                class="article-section"
+                id="supervised-learning">
 
                 <h2>
-
-                    1. Introduction
-
+                    2. Supervised Learning
                 </h2>
+
+                <p>
+                    In this learning method, the computer system is trained
+                    using a dataset in which each input is associated with
+                    its corresponding label.
+                </p>
+
+                <p>
+                    Because the data are already labeled, the computer can
+                    learn the relationship between the input data and the
+                    desired output.
+                </p>
 
 
                 <p>
-
-                   Types of machine learning explains different types of algorithms that use in Machine learning and Artificial intelligence based on their outcome.These algorithm can be used and learn in different ways with the data and generalize to unseen data. Therefore, it does not need any additional instructions to deal with the data.
-
+                    Mathematically, each training sample is represented as:
                 </p>
 
-</section>
-                
-               </p>
 
-           <section class="content-section">
-
-    <h2>Supervised Learning</h2>
-
-    <p>
-        In this learning method, the computer system is trained using a dataset in which
-        each input is associated with its corresponding label. Because the data are
-        already labeled, it is easier for the computer to learn the relationship
-        between the input data and the desired output.
-    </p>
-
-    <p>
-        Mathematically, each training sample is represented as:
-    </p>
-
-    <div class="formula">
-        (X<sub>i</sub>, Y<sub>i</sub>) &sim; P(X, Y)
-    </div>
-
-    <p>where:</p>
-
-    <ul>
-        <li><strong>X<sub>i</sub></strong> = Input feature vector</li>
-        <li><strong>Y<sub>i</sub></strong> = Corresponding target label</li>
-        <li><strong>P(X, Y)</strong> = Joint probability distribution of the input features and labels</li>
-    </ul>
+                <div class="formula">
+                    (X<sub>i</sub>, Y<sub>i</sub>) &sim; P(X, Y)
+                </div>
 
 
-    <h2>Semi-supervised Learning</h2>
-
-    <p>
-    In this learning method, the computer system is trained using <strong>little labeled data and</strong>
-    <strong>unlabeled data</strong> to understand patterns without
-    human intervention or a target output. Therefore, the algorithm starts to learning with the small labeled data and applie the pattern to unlabeled ata it fee for the system.
-</p>
-
-   
-    <h2>Unsupervised Learning</h2>
-
-    <p>
-    In this learning method, the computer system is trained using
-    <strong>unlabeled data</strong> to understand patterns without
-    human intervention or a target output.
-</p>
-
-<p class="formula">
-    X &sim; P(X)
-</p>
-
-    <h2>Self-Supervise Learning</h2>
-
-    <p>
-    This is artificial intelligence learning method where model learn by itself. It can create its own label data using raw and unlabeled data.
-</p>
-
- <h2>Reinforcement Learning</h2>
-
-    <p>
-    The reinforcement learning is similar as self-learning method which use an agent to learn about environment. This learning methods behave by getting positive rewards for target acheivement and lose points when program could not acheive the target.
-</p>
-                <div class="insight-box">
+                <p>
+                    where:
+                </p>
 
 
-                    💡
+                <ul>
 
-                    <strong>
+                    <li>
+                        <strong>X<sub>i</sub></strong>
+                        = Input feature vector
+                    </li>
 
-                        My initial understanding:
+                    <li>
+                        <strong>Y<sub>i</sub></strong>
+                        = Corresponding target label
+                    </li>
 
-                    </strong>
+                    <li>
+                        <strong>P(X, Y)</strong>
+                        = Joint probability distribution of the input
+                        features and labels
+                    </li>
 
+                </ul>
+
+
+                <!-- Example -->
+
+                <div class="concept-box">
+
+                    <h3>
+                        Input → Model → Output
+                    </h3>
 
                     <p>
-
-                        
-
+                        Labeled data → Machine Learning Model → Predicted Output
                     </p>
-
 
                 </div>
 
 
+                <!-- Personal Understanding -->
+
+                <div class="insight-box">
+
+                    💡
+
+                    <strong>
+                        My initial understanding:
+                    </strong>
+
+                    <p>
+                        The model learns from examples where both the input
+                        and the correct answer are already provided.
+                    </p>
+
+                </div>
+
             </section>
+
+
+            <!-- =================================
+                 3. UNSUPERVISED LEARNING
+            ================================== -->
+
+            <section
+                class="article-section"
+                id="unsupervised-learning">
+
+                <h2>
+                    3. Unsupervised Learning
+                </h2>
+
+                <p>
+                    In this learning method, the computer system is trained
+                    using <strong>unlabeled data</strong> to understand
+                    patterns and relationships without human-provided
+                    target outputs.
+                </p>
+
+                <p>
+                    Mathematically, an individual input sample can be
+                    represented as:
+                </p>
+
+                <div class="formula">
+                    X<sub>i</sub> &sim; P(X)
+                </div>
+
+            </section>
+
+
+            <!-- =================================
+                 4. SELF-SUPERVISED LEARNING
+            ================================== -->
+
+            <section
+                class="article-section"
+                id="self-supervised-learning">
+
+                <h2>
+                    4. Self-Supervised Learning
+                </h2>
+
+                <p>
+                    In self-supervised learning, the model learns from
+                    unlabeled data by generating training targets from
+                    the data itself.
+                </p>
+
+            </section>
+
+
+            <!-- =================================
+                 5. SEMI-SUPERVISED LEARNING
+            ================================== -->
+
+            <section
+                class="article-section"
+                id="semi-supervised-learning">
+
+                <h2>
+                    5. Semi-Supervised Learning
+                </h2>
+
+                <p>
+                    Semi-supervised learning uses a combination of
+                    labeled and unlabeled data to train a machine
+                    learning model.
+                </p>
+
+            </section>
+
+
+            <!-- =================================
+                 6. REINFORCEMENT LEARNING
+            ================================== -->
+
+            <section
+                class="article-section"
+                id="reinforcement-learning">
+
+                <h2>
+                    6. Reinforcement Learning
+                </h2>
+
+                <p>
+                    In reinforcement learning, an agent learns by
+                    interacting with an environment and receiving
+                    rewards or penalties based on its actions.
+                </p>
+
+            </section>
+
+
+        </article>
+
+    </main>
+
+
+</body>
+
+</html>
