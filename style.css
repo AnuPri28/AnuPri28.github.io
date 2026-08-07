@@ -507,8 +507,8 @@ body {
 /* Important concept box */
 
 .concept-box {
-    padding: 30px;
-    margin: 30px 0;
+    padding: 28px 30px;
+    margin: 35px 0;
     border-radius: 16px;
     background: rgba(255, 255, 255, 0.06);
     border: 1px solid rgba(255, 255, 255, 0.12);
@@ -516,20 +516,19 @@ body {
 
 .concept-box h3 {
     margin-top: 0;
-    margin-bottom: 18px;   /* Add this */
+    margin-bottom: 18px;
     color: #93c5fd;
 }
 
-/* Add these below */
-
 .concept-box p {
-    margin-bottom: 15px;
-    line-height: 1.6;
+    margin: 0;
+    line-height: 1.7;
 }
 
-.concept-box ol {
-    margin-left: 25px;
-    margin-top: 10px;
+.concept-box ol,
+.concept-box ul {
+    margin-top: 15px;
+    padding-left: 28px;
 }
 
 .concept-box li {
@@ -552,23 +551,11 @@ section li {
 /* Formula */
 
 .formula {
-    padding: 30px;
-
-    margin: 30px 0;
-
+    margin: 25px 0;
+    padding: 15px;
     text-align: center;
-
-    border-radius: 15px;
-
-    background: rgba(2, 6, 23, 0.8);
-
-    border: 1px solid rgba(167, 139, 250, 0.3);
-
-    color: #c4b5fd;
-
-    font-family: "Times New Roman", serif;
-
-    font-size: 1.6rem;
+    font-size: 20px;
+    font-style: italic;
 }
 
 
