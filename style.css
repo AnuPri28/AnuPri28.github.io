@@ -474,7 +474,17 @@ body {
     margin-bottom: 20px;
 }
 
+.article-section ul,
+.article-section ol {
+    margin-top: 10px;
+    margin-bottom: 22px;
+    padding-left: 28px;
+}
 
+.article-section li {
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
 /* Highlight box */
 
 .insight-box {
